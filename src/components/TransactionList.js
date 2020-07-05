@@ -16,6 +16,7 @@ const TransactionList = ({ transactions }) => {
   );
 }
 
+// state.transactions is from reducers index.js which then has a transactions array
 const mapStateToProps = state => ({
   transactions: state.transactions.transactions
 });
