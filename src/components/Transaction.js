@@ -18,9 +18,5 @@ const Transaction = ({ transaction, deleteItem }) => {
   );
 }
 
-const mapDispatchToProps = dispatch => ({
-  deleteItem: id => dispatch(deleteItem(id))
-});
-
 // null is because you aren't doing anything with transaction so only deleteitem is passed back into state via mapDispatchToProps
-export default connect(null, mapDispatchToProps)(Transaction);
+export default connect(null, { deleteItem })(Transaction);

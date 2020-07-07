@@ -54,8 +54,4 @@ const mapStateToProps = state => ({
   transactions: state.transactions.transactions
 });
 
-const mapDispatchToProps = dispatch => ({
-  addItem: transaction => dispatch(addItem(transaction))
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(AddTransaction);
+export default connect(mapStateToProps, { addItem })(AddTransaction);
