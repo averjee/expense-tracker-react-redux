@@ -1,5 +1,7 @@
 # Expense Tracker
 
+Demo: https://expense-tracker-react-alnoor.netlify.app/
+
 This expense tracker app was developed in React using Redux for state management.
 
 ## Installation Instructions
